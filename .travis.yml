@@ -40,7 +40,7 @@ deploy:
       key: springboot-webservice.zip
       bundle_type: zip
       application: springboot-study
-      deployment_group: springboot-study-group
+      deployment_group: springboot-study-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹
       region: ap-northeast-2
       wait-until-deployed: true
       on:
