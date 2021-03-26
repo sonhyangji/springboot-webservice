@@ -36,11 +36,11 @@ deploy:
   - provider: codedeploy
       access_key_id: $AWS_ACCESS_KEY
       secret_access_key: $AWS_SECRET_KEY
-      bucket: aboutme-study-deploy # S3 버킷
-      key: springboot-webservice.zip # 빌드 파일을 압축해서 전달
+      bucket: aboutme-study-deploy
+      key: springboot-webservice.zip
       bundle_type: zip
-      application: springboot-study # 웹 콘솔에서 등록한 CodeDeploy 어플리케이션
-      deployment_group: springboot-study-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹
+      application: springboot-study
+      deployment_group: springboot-study-group
       region: ap-northeast-2
       wait-until-deployed: true
       on:
